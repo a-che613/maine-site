@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Quicksand&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  border-bottom: 0.5px solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+header button {
+  padding: 3px 12px;
+  background: none;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 0.5px solid black; */
+  position: fixed;
+  top: 0;
+  width: 90%;
+  margin: 5px;
+}
+
+nav .ham {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  /* font-family: 'Marck Script', cursive; */
+}
+
+.bx-menu {
+  font-size: 23px;
+}
+
+nav ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  border: 0.5px solid black;
+  padding: 5px;
+  gap: 5px;
+  left: -100%;
+  transition: all 3s ease-in-out;
+  background: white;
+}
+nav ul.active {
+  left: initial;
+}
+
+.sec1 {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.sec1 .images {
+  width: 100%;
+  transition: all 2s ease;
+}
+.sec1 img {
+  width: 100%;
+  height: 100%;
+}
+.sec2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.sec2 .about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.about button {
+  padding: 5px 12px;
+  background: none;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}
+.sec2 span {
+  font-size: 20px;
+  font-weight: bold;
+}
